@@ -57,7 +57,7 @@ import { useSelector } from "react-redux";
             <Link to="/" className="logo flex gap-3 items-center no-underline">
                 
                 <img className="h-[75px] rounded-full" src="./download.jpeg" alt="" />
-                <h1 className="font-bold text-green-600 text-2xl ">BooksHeaven</h1>
+                <h1 className="font-bold text-green-600 text-2xl ">BookHeaven</h1>
                 </Link>
                 <div className="nav-links-books md:flex gap-4 items-center block" >
                     <div className="nav-links-book md:flex gap-6 hidden">
