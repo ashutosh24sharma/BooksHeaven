@@ -25,7 +25,7 @@ function SignUp() {
         return;
       }
 
-      const response = await axios.post("https://bookhaven-gx84.onrender.com/api/v1/sign-up", values);
+      const response = await axios.post("https://bookstore-2-ow93.onrender.com/api/v1/sign-up", values);
       alert(response.data.message);
       navigate("/sign-in");
     } catch (error) {

@@ -34,7 +34,7 @@ const navigate=useNavigate();
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `https://bookhaven-gx84.onrender.com/api/v1/get-book-by-id${id}`
+        `https://bookstore-2-ow93.onrender.com/api/v1/get-book-by-id${id}`
       );
 
       setData(response.data.data);
@@ -56,7 +56,7 @@ const navigate=useNavigate();
     try {
       
 
-      const response= await axios.put("https://bookhaven-gx84.onrender.com/api/v1/add-book-in-favi",{},{headers});
+      const response= await axios.put("https://bookstore-2-ow93.onrender.com/api/v1/add-book-in-favi",{},{headers});
 
       alert(response.data.message);
 
@@ -72,7 +72,7 @@ const navigate=useNavigate();
     try {
       
 
-      const response= await axios.put("https://bookhaven-gx84.onrender.com/api/v1/add-to-cart",{},{headers});
+      const response= await axios.put("https://bookstore-2-ow93.onrender.com/api/v1/add-to-cart",{},{headers});
 
       alert(response.data.message);
 
@@ -84,7 +84,7 @@ const navigate=useNavigate();
    }
 
    const deletebook=async ()=>{
-    const response= await axios.delete("https://bookhaven-gx84.onrender.com/api/v1/delete-book",{headers});
+    const response= await axios.delete("https://bookstore-2-ow93.onrender.com/api/v1/delete-book",{headers});
 
       alert(response.data.message);
       navigate("/all-books")

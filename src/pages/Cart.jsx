@@ -25,7 +25,7 @@ function Cart() {
   useEffect(()=>{
 
     const fetch=async ()=>{
-      const response=await axios.get("https://bookhaven-gx84.onrender.com/api/v1/get-user-cart",{headers});
+      const response=await axios.get("https://bookstore-2-ow93.onrender.com/api/v1/get-user-cart",{headers});
     
       setCartBook(response.data.data)
     };
@@ -38,7 +38,7 @@ function Cart() {
      const deleteitem=async (bookid)=>{
 
       try {
-        const response=await axios.put(`https://bookhaven-gx84.onrender.com/api/v1/remove-to-cart/${bookid}`,{},{headers});
+        const response=await axios.put(`https://bookstore-2-ow93.onrender.com/api/v1/remove-to-cart/${bookid}`,{},{headers});
     
       alert(response.data.message)
 
@@ -66,7 +66,7 @@ function Cart() {
      const placeOrder=async ()=>{
 
       try {
-        const response=await axios.post(`https://bookhaven-gx84.onrender.com/api/v1/place-order`,{order:cartBook},{headers});
+        const response=await axios.post(`https://bookstore-2-ow93.onrender.com/api/v1/place-order`,{order:cartBook},{headers});
     
       alert(response.data.message);
       navigate("/profile/orderhistory");

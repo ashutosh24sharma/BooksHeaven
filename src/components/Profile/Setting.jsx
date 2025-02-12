@@ -25,7 +25,7 @@ try {
   useEffect(()=>{
 
     const fetch=async ()=>{
-      const response=await axios.get("https://bookhaven-gx84.onrender.com/api/v1/get-user-information",{headers});
+      const response=await axios.get("https://bookstore-2-ow93.onrender.com/api/v1/get-user-information",{headers});
 
 
     
@@ -44,7 +44,7 @@ try {
 const addressSubmit=async ()=>{
   
   try {
-    const response=await axios.put("https://bookhaven-gx84.onrender.com/api/v1/update-adress",Value,{headers});
+    const response=await axios.put("https://bookstore-2-ow93.onrender.com/api/v1/update-adress",Value,{headers});
   
   
       

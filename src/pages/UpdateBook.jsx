@@ -40,7 +40,7 @@ function Updatebook() {
         if(Data.url==="" ||Data.title==="" ||Data.author==="" ||Data.desc==="" ||Data.language==="" ||Data.price===""){
             alert("All fields are required");
         }else{
-            const response= await axios.put("https://bookhaven-gx84.onrender.com/api/v1/update-book",Data,{headers});
+            const response= await axios.put("https://bookstore-2-ow93.onrender.com/api/v1/update-book",Data,{headers});
             SetData({
                 url:"",
                 title:"",
@@ -61,7 +61,7 @@ function Updatebook() {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `https://bookhaven-gx84.onrender.com/api/v1/get-book-by-id${id}`
+        `https://bookstore-2-ow93.onrender.com/api/v1/get-book-by-id${id}`
       );
 
       SetData(response.data.data);

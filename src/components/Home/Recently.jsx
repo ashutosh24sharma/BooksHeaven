@@ -9,7 +9,7 @@ function Recently() {
  useEffect(()=>{
 
         const fetch=async ()=>{
-      const response=  await axios.get("https://bookhaven-gx84.onrender.com/api/v1/recent-all-book")
+      const response=  await axios.get("https://bookstore-2-ow93.onrender.com/api/v1/recent-all-book")
          
        setData(response.data.data);
          }
