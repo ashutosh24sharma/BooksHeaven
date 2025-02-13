@@ -17,7 +17,7 @@ const handleRemoveBook=async ()=>{
   try {
       
 
-    const response= await axios.put("https://bookstore-2-ow93.onrender.com/api/v1/remove-book-from-favi",{},{headers});
+    const response= await axios.put("https://bookhaven-gx84.onrender.com/api/v1/remove-book-from-favi",{},{headers});
 
    
 

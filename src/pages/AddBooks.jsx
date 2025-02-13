@@ -33,7 +33,7 @@ function AddBooks() {
         if(Data.url==="" ||Data.title==="" ||Data.author==="" ||Data.desc==="" ||Data.language==="" ||Data.price===""){
             alert("All fields are required");
         }else{
-            const response= await axios.post("https://bookstore-2-ow93.onrender.com/api/v1/add-book",Data,{headers});
+            const response= await axios.post("https://bookhaven-gx84.onrender.com/api/v1/add-book",Data,{headers});
             SetData({
                 url:"",
                 title:"",

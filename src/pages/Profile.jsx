@@ -25,7 +25,7 @@ function Profile() {
       
     const fetch=async ()=>{
       
-      const response=await axios.get("https://bookstore-2-ow93.onrender.com/v1/get-user-information",{headers});
+      const response=await axios.get("https://bookhaven-gx84.onrender.com/v1/get-user-information",{headers});
 
      SetProfile(response.data);
 

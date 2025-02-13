@@ -20,7 +20,7 @@ const [Allorders,setAllorders]=useState();
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        `https://bookstore-2-ow93.onrender.com/api/v1/get-all-orders`,{headers}
+        `https://bookhaven-gx84.onrender.com/api/v1/get-all-orders`,{headers}
       );
 
       setAllorders(response.data.data);
